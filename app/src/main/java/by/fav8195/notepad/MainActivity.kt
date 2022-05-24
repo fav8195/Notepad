@@ -1,5 +1,6 @@
 package by.fav8195.notepad
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -23,7 +24,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onclickNew(view: View) {
-
+        val i = Intent(this, EditActivity::class.java)
+        startActivity(i)
     }
 
     override fun onDestroy() {
